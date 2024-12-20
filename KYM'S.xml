@@ -1,7 +1,7 @@
 <xml xmlns="https://developers.google.com/blockly/xml" is_dbot="true" collection="false">
   <variables>
     <variable id="/~-+mmFsYGB%~WTzS%,g">Stake</variable>
-    <variable id="{7yeazK[c_W:Gc5f6!/">currentPrediction</variable>
+    <variable id="{7yeazK[c_W:Gc`5f6!/">currentPrediction</variable>
     <variable id="63RXsB.,!h.qxxT/Squh">list</variable>
   </variables>
   <block type="trade_definition" id="X83_Zw!nF_Y?cq$A[1AV" deletable="false" x="0" y="0">
@@ -15,16 +15,16 @@
             <field name="TRADETYPECAT_LIST">digits</field>
             <field name="TRADETYPE_LIST">overunder</field>
             <next>
-              <block type="trade_definition_contracttype" id="/m(FM+jcN{LwHEIBx6T" deletable="false" movable="false">
+              <block type="trade_definition_contracttype" id="/m(FM+jcN{LwHEI`Bx6T" deletable="false" movable="false">
                 <field name="TYPE_LIST">both</field>
                 <next>
                   <block type="trade_definition_candleinterval" id="ng,K$-qjDi?HAhRojfPX" deletable="false" movable="false">
                     <field name="CANDLEINTERVAL_LIST">60</field>
                     <next>
-                      <block type="trade_definition_restartbuysell" id="Ao@_v6;=|yO@:0[d-!q" deletable="false" movable="false">
+                      <block type="trade_definition_restartbuysell" id="Ao@_v6;=|`yO@:0[d-!q" deletable="false" movable="false">
                         <field name="TIME_MACHINE_ENABLED">FALSE</field>
                         <next>
-                          <block type="trade_definition_restartonerror" id="pQVdPuih*Ov!n58-#3@" deletable="false" movable="false">
+                          <block type="trade_definition_restartonerror" id="pQVdPuih*Ov!n58-#3`@" deletable="false" movable="false">
                             <field name="RESTARTONERROR">TRUE</field>
                           </block>
                         </next>
@@ -57,7 +57,7 @@
                   </block>
                 </value>
                 <next>
-                  <block type="lists_statement" id="(G#s__|QDq)7pIlo6AB" movable="false">
+                  <block type="lists_statement" id="(G#`s__|QDq)7pIlo6AB" movable="false">
                     <value name="VALUE">
                       <block type="math_number" id="Zy3I~Hc_9QS[a:L03DGb">
                         <field name="NUM">4</field>
@@ -80,7 +80,7 @@
                             <next>
                               <block type="lists_statement" id="aYKm@/e6~y$whg?-Hd2s" movable="false">
                                 <value name="VALUE">
-                                  <block type="math_number" id="IPB]fGn|TEnKiYM4G4g">
+                                  <block type="math_number" id="IPB]fGn|TEnKi`YM4G4g">
                                     <field name="NUM">1</field>
                                   </block>
                                 </value>
@@ -99,8 +99,8 @@
       </block>
     </statement>
     <statement name="SUBMARKET">
-      <block type="math_change" id="qNG#~#;IKEgq~t}um45">
-        <field name="VAR" id="{7yeazK[c_W:Gc5f6!/">currentPrediction</field>
+      <block type="math_change" id="qNG#~#;IKE`gq~t}um45">
+        <field name="VAR" id="{7yeazK[c_W:Gc`5f6!/">currentPrediction</field>
         <value name="DELTA">
           <shadow type="math_number" id="LKRy)5g%xKM{7U*ZQf.P">
             <field name="NUM">1</field>
@@ -137,8 +137,8 @@
                   </block>
                 </value>
                 <value name="AT">
-                  <block type="variables_get" id="p=f65{ERHhwA7WFFoAu">
-                    <field name="VAR" id="{7yeazK[c_W:Gc5f6!/">currentPrediction</field>
+                  <block type="variables_get" id="`p=f65{ERHhwA7WFFoAu">
+                    <field name="VAR" id="{7yeazK[c_W:Gc`5f6!/">currentPrediction</field>
                   </block>
                 </value>
               </block>
@@ -148,7 +148,7 @@
       </block>
     </statement>
   </block>
-  <block type="during_purchase" id="QeUu`I2!~IIM,SvA{3" x="1005" y="0">
+  <block type="during_purchase" id="QeUu``I2!~IIM,SvA{`3" x="1005" y="0">
     <statement name="DURING_PURCHASE_STACK">
       <block type="controls_if" id="xhm_:DB:lS|e?7vv,zgZ">
         <value name="IF0">
@@ -161,13 +161,13 @@
     <statement name="AFTERPURCHASE_STACK">
       <block type="controls_if" id="AQpJsuv2V^VTUd9B}U,B">
         <value name="IF0">
-          <block type="contract_check_result" id="LU=1V6Pmvg_D@H-T_*">
+          <block type="contract_check_result" id="`LU=1V6Pmvg_D@H-T`_*">
             <field name="CHECK_RESULT">win</field>
           </block>
         </value>
         <statement name="DO0">
-          <block type="variables_set" id="%u/dlROTgrE|3GvY):=">
-            <field name="VAR" id="{7yeazK[c_W:Gc5f6!/">currentPrediction</field>
+          <block type="variables_set" id="%u/dlROTgrE|3G`vY):=">
+            <field name="VAR" id="{7yeazK[c_W:Gc`5f6!/">currentPrediction</field>
             <value name="VALUE">
               <block type="math_number" id="R|4|21;I{s.-JgTEP;3$">
                 <field name="NUM">0</field>
