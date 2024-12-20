@@ -185,22 +185,31 @@
     <statement name="BEFOREPURCHASE_STACK">
       <block type="controls_if" id="check_last_digit">
         <value name="IF0">
-          <block type="math_modulo" id="modulo_check">
-            <value name="DIVIDEND">
-              <block type="lists_getIndex" id="get_prediction_value">
-                <mutation xmlns="http://www.w3.org/1999/xhtml" statement="false" at="true"></mutation>
-                <field name="MODE">GET</field>
-                <field name="WHERE">FROM_START</field>
-                <value name="VALUE">
-                  <block type="variables_get" id="current_prediction">
-                    <field name="VAR" id="{7yeazK[c_W:Gc`5f6!/">currentPrediction</field>
+          <block type="math_equals" id="last_digit_check">
+            <value name="A">
+              <block type="math_modulo" id="modulo_check">
+                <value name="DIVIDEND">
+                  <block type="lists_getIndex" id="get_prediction_value">
+                    <mutation xmlns="http://www.w3.org/1999/xhtml" statement="false" at="true"></mutation>
+                    <field name="MODE">GET</field>
+                    <field name="WHERE">FROM_START</field>
+                    <value name="VALUE">
+                      <block type="variables_get" id="current_prediction">
+                        <field name="VAR" id="{7yeazK[c_W:Gc`5f6!/">currentPrediction</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="DIVISOR">
+                  <block type="math_number" id="last_digit_divisor">
+                    <field name="NUM">10</field>
                   </block>
                 </value>
               </block>
             </value>
-            <value name="DIVISOR">
-              <block type="math_number" id="last_digit_divisor">
-                <field name="NUM">10</field>
+            <value name="B">
+              <block type="math_number" id="seven_digit">
+                <field name="NUM">7</field>
               </block>
             </value>
           </block>
